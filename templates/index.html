@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <h1 class="main-heading">Fake news detector</h1>
+        <p class="sub-heading">Provide a news text / headline / link</p>
+
+        <form action="/predict" method="POST">
+            <input class="form-input" type="text" name="article">
+            <br>
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+
+        <h2 class="result"> {{ prediction_text }} </h2>
+
+    </main>
+</body>
+
+</html>
