@@ -1,4 +1,6 @@
 # Fake-News-Detection
+# The aim of the project is about understanding of what is actually fake news and propose an efficient way to
+detect them using the latest machine learning and natural language process techniques.
  
 VTU Final Year Project
 
